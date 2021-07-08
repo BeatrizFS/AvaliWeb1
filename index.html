@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora</title>
+<style>
+body{
+    background-color: rgb(127, 127, 199);
+}
+th{
+    font-size: 30px;
+    position: relative;
+}
+tr{
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 10px;
+}
+
+</style>
+</head>
+<body>
+    <main>
+        <center> <!--Informações ficam no centro-->
+            <br>
+            <form>
+                <table border="0">
+                    <tr>
+                        <th colspan="6"> Calculadora </th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="num1" id='num1' placeholder="Primeiro Valor"></td>
+                        <td> 
+                            
+                            <select name="operacao" id="operacao"> 
+                                <option value="+">Soma</option>
+                                <option value="-">Subtrai</option>
+                                <option value="*">Multiplicar</option>
+                                <option value="/">Dividi</option>
+                                <option value="**">Expoenciar</option>
+                                <option value="Math.sqrt(num1)">Raiz</option>
+                            </select>
+        
+                        </td>
+                        <td><input type="text" name="num2" id='num2' placeholder="Segundo Valor"></td>
+                        <td> <input type="button" value="=" onclick="calcular();" name=""></td>
+                        <td><input type="text" name="result" id='result'></td>
+                        <td><button class="botao" onclick="clean()">C</button></td> <!--limpa-->
+                    </tr>
+        
+                </table>
+            </form>
+            </center>
+        
+        <script src="script.js"></script>
+                
+    </main>
+</body>
+</html>
